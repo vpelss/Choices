@@ -1,0 +1,21 @@
+Upload all files to your html documents root in ASCII format.
+
+Example:
+/home/pagename/public_html/choices/
+
+By adding
+<?php $scripturi='/choices/'; chdir('/home/pagename/public_html/choices/'); include('show.php');?>
+to your index page the script will run.
+Note that the paths will have to be altered to suit your installation location. See below.
+
+$scripturi='/choices/'; #this will be the path to the script at the end of your sites URL 
+
+chdir('/home/pagename/public_html/choices/'); #this will be the full server path to the scripts
+
+*****IMPORTANT******
+To set an admin username and password, edit the vars.php file to suit.
+For added protection, secure the /choices/admin folder with an .htaccess file
+
+The admin panel can be accessed at:
+http://yoursite.com/choices/admin/
+in the above example.

@@ -1,0 +1,1 @@
+<input type='radio' name ='vote' value='{$key}'> {$choice} <br>
